@@ -28,7 +28,7 @@ var zoomPrev=canvas.getZoom()-1;
 var px,py;
 canvas.on('mouse:wheel',(opt)=>{
     console.log(opt);
-    var delta=opt.e.deltaX;
+    var delta=opt.e.deltaY;
     console.log("prev",zoomPrev)
     var zoom = canvas.getZoom();
    
