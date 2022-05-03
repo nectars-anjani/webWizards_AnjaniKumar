@@ -41,7 +41,6 @@ canvas.on('mouse:wheel',(opt)=>{
             py=opt.e.offsetY;
         }
         zoomPrev=zoom;
-        if (zoom < 0.01) zoom = 0.01;
         canvas.zoomToPoint({ x: opt.e.offsetX,y: opt.e.offsetY}, zoom);
         console.log(opt.e.offsetX,opt.e.offsetY,px,py);
     }else{
